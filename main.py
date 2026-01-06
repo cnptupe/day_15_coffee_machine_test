@@ -61,7 +61,7 @@ def make_coffee(usr_choice):
 
 # 4. Check resources before any transaction.
 def check_coffee_resources_ok(usr_choice):
-    # global MENU
+    global MENU
     if coffee_machine_resources['water'] < MENU[usr_choice]['ingredients']['water']:
         print("Sorry there is not enough water.")
         return False
